@@ -1,0 +1,85 @@
+﻿# Compiled binary files
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.appx
+*.appxbundle
+*.msi
+*.msm
+*.msp
+
+# Visual Studio user-specific files
+.vscode/
+*.user
+*.suo
+*.ntvs*
+*.njsproj
+*.sln.docstates
+*.tf*
+*.ps1
+*.vs/
+.vs/
+**.vs
+.vs/**
+
+# ASP.NET temp files
+App_Data/
+AppPackages/
+Backup*/
+GeneratedFiles/
+
+# User secrets (avoid committing sensitive data)
+secrets.json
+*.env
+.env.local
+
+# Logs and Debugging
+logs/
+*.log
+*.tlog
+debug/
+dump/
+
+# Rider and JetBrains
+.idea/
+*.sln.iml
+
+# NuGet dependencies
+*.nupkg
+packages/
+project.lock.json
+nuget.lock.json
+global.json
+
+# npm / Node.js (if using frontend assets)
+node_modules/
+npm-debug.log
+yarn.lock
+package-lock.json
+
+# Publish output
+publish/
+wwwroot/dist/
+wwwroot/lib/
+wwwroot/css/
+wwwroot/js/
+
+# Database files (optional)
+*.mdf
+*.ldf
+*.sqlite
+*.db
+
+# Entity Framework Migrations (optional)
+Migrations/
+
+# Azure related
+.azure/
+*.publishsettings
+*.publish.xml
+
+# Docker-related
+docker-compose.override.yml
+.dockerignore
