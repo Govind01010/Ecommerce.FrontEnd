@@ -61,10 +61,7 @@ package-lock.json
 
 # Publish output
 publish/
-wwwroot/dist/
-wwwroot/lib/
-wwwroot/css/
-wwwroot/js/
+
 
 # Database files (optional)
 *.mdf

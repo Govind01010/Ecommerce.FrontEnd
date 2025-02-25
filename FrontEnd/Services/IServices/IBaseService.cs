@@ -1,9 +1,10 @@
-﻿using FrontEnd.Models.Dtos;
+﻿using Discount.Domain.Shared;
+using FrontEnd.Models.Dtos;
 
 namespace FrontEnd.Services.IServices
 {
     public interface IBaseService
     {
-        Task<ResponseDto?> SendAsync(RequestDto requestDto);
+        Task<Result<T>?> SendAsync<T>(RequestDto requestDto);
     }
 }

@@ -1,7 +1,22 @@
+using FrontEnd.Services;
+using FrontEnd.Services.IServices;
+using FrontEnd.Utility;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// For HttpClientFactory 
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddHttpClient();
+builder.Services.AddHttpClient<IDiscountCouponService, DiscountCouponService>();
+
+// Configured Services Urls
+SD.DiscountCouponApiBase = builder.Configuration["ServiceUrls:DiscountCouponApi"];
+
+builder.Services.AddScoped<IBaseService,BaseService>();
+builder.Services.AddScoped<IDiscountCouponService, DiscountCouponService>();
 
 var app = builder.Build();
 
